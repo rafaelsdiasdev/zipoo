@@ -1,14 +1,19 @@
 import React from 'react';
-import Payments from './components/Payments'
-import { Switch, Route } from 'react-router-dom'
+import AuthContextProvider from './contexts/AuthContext'
 
-export default function App() {
-  return (
-    <div className="App page-container">
-      <Switch>
-        <Route exact path="/" component={Payments} />
-      </Switch>
-    </div>
-  )
+import './global.scss'
+
+import Routes from './routes'
+
+function App() {
+    return (
+        <div>
+            <AuthContextProvider>
+                <Routes />
+            </AuthContextProvider>
+        </div>
+    );
 }
+
+export default App;
 

@@ -90,11 +90,11 @@ export default function Payment() {
                 {/* Fim Modal */}
 
                 <form className="form-group" onSubmit={handleSubmit}>
-                    <input className="form-control" placeholder="Nome" required onChange={(e) => setName(e.target.value)} />
+                    {/* <input className="form-control" placeholder="Nome" required onChange={(e) => setName(e.target.value)} />
                     <input className="form-control" placeholder="Sobrenome" required onChange={(e) => setLastName(e.target.value)} />
                     <input className="form-control" placeholder="CPF" required onChange={(e) => setDocument(e.target.value)} />
                     <input className="form-control" type="email" placeholder="E-mail" required onChange={(e) => setEmail(e.target.value)} />
-                    <input className="form-control" type="tel" placeholder="Telefone" required onChange={(e) => setPhone(e.target.value)} />
+                    <input className="form-control" type="tel" placeholder="Telefone" required onChange={(e) => setPhone(e.target.value)} /> */}
                     <button className="btn btn-success btn-block" data-toggle="modal" data-target="#payment" type="submit" required onClick={() => payment()}>Pagar</button>
                 </form>
                 <p style={{ color: "red" }}>{erro}</p>
